@@ -1,0 +1,36 @@
+package com.company;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        System.out.println("Welcome to calculator");
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter both numbers");
+        float num1 = sc.nextFloat();
+        float num2 = sc.nextFloat();
+        System.out.println("enter operators");
+        char opr = sc.next().charAt(0);
+        switch (opr) {
+            case '+':
+                System.out.println(num1 + num2);
+                break;
+            case '-':
+                System.out.println(num1 - num2);
+                break;
+            case '*':
+                System.out.println(num1 * num2);
+                break;
+            case '/':
+                System.out.println(num1 / num2);
+                break;
+            case '%':
+                System.out.println(num1 % num2);
+                break;
+            default:
+                System.out.println("invalid operator");
+                break;
+        }
+    }
+}
